@@ -16,10 +16,11 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
-            background-color: #fff;
             border: 1px solid #ddd;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            background-color: #c5dbef;
+            box-shadow: #888484;
         }
 
         .task-link {
@@ -62,6 +63,52 @@
 
         .task-list li a:hover {
             color: #23527c;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+                background-color: #c5dbef;
+                box-shadow: #888484;
+            }
+
+            h1,
+            h2 {
+                font-size: larger;
+            }
+
+            .task-list li {
+                margin-bottom: 5px;
+            }
+
+            .task-link {
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .container {
+                max-width: 90%;
+                margin: 10px auto;
+                padding: 10px;
+                background-color: #c5dbef;
+                box-shadow: #888484;
+            }
+
+            h1,
+            h2 {
+                font-size: medium;
+            }
+
+            .task-list li {
+                margin-bottom: 2px;
+            }
+
+            .task-link {
+                padding: 2px;
+            }
         }
     </style>
 </head>
